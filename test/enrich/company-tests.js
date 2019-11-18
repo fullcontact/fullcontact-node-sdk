@@ -21,4 +21,20 @@ describe('CompanyEnrichAPI', () => {
     await instance.enrich(body);
     scope.done();
   });
+
+  it('should search', async () => {
+    const apiKey = chance.string();
+    const instance = new CompanyEnrichAPI({ apiKey });
+
+    const body = { companyName: chance.string() };
+
+    const scope = nock(config.url, {
+      req_headers: { Authorization: `Bearer ${apiKey}` }
+    })
+      .post('/v3/company.search', body)
+      .reply(200, {});
+
+    await instance.search(body);
+    scope.done();
+  });
 });
