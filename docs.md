@@ -60,6 +60,7 @@ Config: {
     * [new CompanyEnrichAPI()](#new_CompanyEnrichAPI_new)
     * _instance_
         * [.enrich(body)](#CompanyEnrichAPI+enrich) ⇒ <code>Promise</code>
+        * [.search(body)](#CompanyEnrichAPI+search) ⇒ <code>Promise</code>
     * _static_
         * [.CompanyEnrichAPI](#CompanyEnrichAPI.CompanyEnrichAPI)
             * [new CompanyEnrichAPI()](#new_CompanyEnrichAPI.CompanyEnrichAPI_new)
@@ -73,6 +74,17 @@ Company Enrich APIs
 
 ### companyEnrichAPI.enrich(body) ⇒ <code>Promise</code>
 Enriches a company by domain (https://docs.fullcontact.com/#company-enrichment)
+
+**Kind**: instance method of [<code>CompanyEnrichAPI</code>](#CompanyEnrichAPI)  
+
+| Param | Type |
+| --- | --- |
+| body | <code>Object</code> | 
+
+<a name="CompanyEnrichAPI+search"></a>
+
+### companyEnrichAPI.search(body) ⇒ <code>Promise</code>
+Search for a company by name (https://docs.fullcontact.com/#company-enrichment)
 
 **Kind**: instance method of [<code>CompanyEnrichAPI</code>](#CompanyEnrichAPI)  
 
