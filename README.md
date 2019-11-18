@@ -6,7 +6,7 @@
 
 ### Installation
 
-`npm install fullcontact-api-node --save`
+`npm install fullcontact-node-sdk --save`
 
 ### Documentation
 
