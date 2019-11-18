@@ -2,7 +2,7 @@
 [![npm version](https://badge.fury.io/js/fullcontact-node-sdk.svg)](https://badge.fury.io/js/fullcontact-node-sdk)
 [![Node version](https://img.shields.io/node/v/fullcontact-node-sdk.svg?style=flat)](http://nodejs.org/download/)
 
-*IMPORTANT: This SDK should be used server-side only. Using it in a browser would API Key.*
+*IMPORTANT: This SDK should be used server-side only. Using it in a browser would expose your API Key.*
 
 ### Installation
 
